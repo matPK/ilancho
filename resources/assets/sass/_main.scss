@@ -1,0 +1,36 @@
+//Basic Structure
+html {
+	position: relative;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	min-width: $app-min-width;
+	margin-top: $navbar-height;
+	padding-bottom: $footer-height;
+	color: $font-color;
+}
+
+header {
+	min-width: $app-min-width;
+}
+
+footer {
+	/* Positioning */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	min-width: $app-min-width;
+	z-index: 2;
+
+	background-color: $footer-bg;
+
+	/* Set the fixed height of the footer here */
+	height: $footer-height;
+
+	/* Vertically center the text there. Both should sum to half the height */
+	line-height: $footer-height/4;
+	padding-top: $footer-height/4;
+}

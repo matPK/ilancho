@@ -25,7 +25,17 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
+
+    /**
+     * Returns the column used for authentication.
+     *
+     * @return string
+     */
+    public function username()
+    {
+        return 'cpf';
+    }
 
     /**
      * Create a new controller instance.

@@ -2,19 +2,22 @@
 
 namespace App\Http\Controllers;
 
-use App\Kitchen;
 use Illuminate\Http\Request;
+use App\Customer;
+use App\Order;
 
-class KitchenController extends Controller
+class CustomerOrderController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
+     * @param  \App\Customer  $customer
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Customer $customer)
     {
-        return view('kitchens.index');
+        $orders = $customer->orders();
+        //TODO: DO SOMETHING WITH IT
     }
 
     /**
@@ -41,10 +44,10 @@ class KitchenController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Kitchen  $kitchen
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Kitchen $kitchen)
+    public function show($id)
     {
         //
     }
@@ -52,10 +55,10 @@ class KitchenController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Kitchen  $kitchen
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Kitchen $kitchen)
+    public function edit($id)
     {
         //
     }
@@ -64,10 +67,10 @@ class KitchenController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Kitchen  $kitchen
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Kitchen $kitchen)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +78,10 @@ class KitchenController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Kitchen  $kitchen
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Kitchen $kitchen)
+    public function destroy($id)
     {
         //
     }

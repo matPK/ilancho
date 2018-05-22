@@ -1,0 +1,37 @@
+#navbarCollapse {
+    width: 50%;
+    max-width: 200px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+#navbarCollapse ul {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#navbarCollapse ul li a {
+    display: block;
+    padding: 0.6em 1em;
+    color: white;
+}
+
+#navbarCollapse ul li a:hover,
+a.nav-link.active {
+    color: $brand-green;
+}
+
+#navbarLogo {
+    width: auto;
+    height: 50px;
+    margin-left: -10px;
+}
+
+li.nav-item {
+    border-bottom: 1px solid #666666;
+}
+
+#top-navbar {
+    height: $navbar-height;
+    background-color: $navbar-bg;
+}

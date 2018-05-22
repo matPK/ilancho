@@ -1,0 +1,32 @@
+.footer-nav-text {
+    font-size: 10px;
+}
+.footer-nav-link {
+    display: inline-block;
+    width: 100%;
+    color: whitesmoke;
+    font-weight: 500;
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+.footer-nav-link:hover {
+    text-decoration: inherit;
+    cursor: pointer;
+    color: $brand-yellow;
+}
+
+.footer-nav-link.active {
+    color: $brand-yellow;
+}
+
+#footer-abrace_ja {
+    border-top: 10px solid red;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.footer-div {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}

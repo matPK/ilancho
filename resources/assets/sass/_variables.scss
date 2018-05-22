@@ -1,8 +1,20 @@
 
 // Body
-$body-bg: #f5f8fa;
+$body-bg: #682B29;
+$navbar-bg: #BC3633;
+$footer-bg: #BC3633;
+
+//Basic Structure
+$app-min-width: 320px;
+$footer-height: 60px;
+$navbar-height: 60px;
+
+$brand-green: #28942F;
+$brand-blue: #206E72;
+$brand-yellow: #BC7433;
 
 // Typography
 $font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+$font-size-base: 1rem;
+$font-color: #333333;
+$line-height-base: 1.5;

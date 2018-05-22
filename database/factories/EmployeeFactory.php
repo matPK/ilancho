@@ -1,6 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
+use Faker\Provider as Provider;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +14,14 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(App\User::class, function (Faker $faker) {
+$factory->define(App\Employee::class, function (Faker $faker) {
+	$faker->addProvider(new Provider\pt_BR\Person($faker));
     return [
-        'name' => $faker->name,
-        'email' => $faker->unique()->safeEmail,
-        'password' => '$2y$10$TKh8H1.PfQx37YgCzwiKb.KjNyWgaHb9cbcoQgdIVFlYg7B77UdFm', // secret
+        'first_name' => $faker->firstName,
+        'last_name' => $faker->lastName,
+        'cpf' => $faker->unique()->cpf(false),
+        'restaurant_id' => $faker->numberBetween(1, 3),//number of seeded restaurants
+        'password' => Hash::make('123456'),
         'remember_token' => str_random(10),
     ];
 });
