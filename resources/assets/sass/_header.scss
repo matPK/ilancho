@@ -18,7 +18,7 @@
 
 #navbarCollapse ul li a:hover,
 a.nav-link.active {
-    color: $brand-green;
+    color: $brand-green !important;
 }
 
 #navbarLogo {

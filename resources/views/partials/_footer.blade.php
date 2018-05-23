@@ -1,9 +1,9 @@
 <footer class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-xs-12 col-md-8">
+        <div class="col-md-10">
             <div class="row justify-content-center">
                 <div class="col text-center footer-div">
-                    <a class="footer-nav-link" href="{{ url('/') }}">
+                    <a class="footer-nav-link{{ (Request::is('/') ? ' active' : '') }}" href="{{ url('/') }}">
                         <i class="fas fa-home"></i>
                         <div class="footer-nav-text">HOME</div>
                     </a>

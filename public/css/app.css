@@ -10465,7 +10465,7 @@ footer {
 
 #navbarCollapse ul li a:hover,
 a.nav-link.active {
-  color: #28942F;
+  color: #28942F !important;
 }
 
 #navbarLogo {
@@ -10499,11 +10499,11 @@ li.nav-item {
 .footer-nav-link:hover {
   text-decoration: inherit;
   cursor: pointer;
-  color: #BC7433;
+  color: gold;
 }
 
 .footer-nav-link.active {
-  color: #BC7433;
+  color: gold;
 }
 
 #footer-abrace_ja {
